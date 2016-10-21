@@ -7,6 +7,18 @@
 </head>
 <body>
 <a-scene>
+    <a-sphere position="0 1.25 -1" radius="1.25" color="#ef2d5e">
+        <!-- 缩放 -->
+        <a-animation attribute="scale" from="1 1 1" to="1.2 1.2 1.2" repeat="indefinite" direction="alternate" dur="2000"></a-animation>
+    </a-sphere>
+    <a-box position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depath="1" color="#4cc3d9">
+        <!-- 旋转 -->
+        <a-animation attribute="rotation" from="0 45 0" to="0 360 0" repeat="indefinite" direction="alternate"></a-animation>
+    </a-box>
+    <a-cylinder position="1 0.75 1" radius="0.5" height="1.5" color="#ffc65d">
+        <!-- 改变高度 -->
+        <a-animation attribute="height" from="1.5" to="0" repeat="indefinite" direction="alternate"></a-animation>
+    </a-cylinder>
     <a-torus color="#43A367" arc="270" radius="5" radius-tubular="0.1" rotation="0 0 -45"></a-torus>
     <a-entity>
         <a-animation attribute="position" from="0 0 100" to="0 -2 8" dur="8000"></a-animation>
